@@ -1,0 +1,21 @@
+input{
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 16px 64px;
+    outline: none;
+    background-color: white;
+    &::placeholder{
+       color: $black; 
+       letter-spacing: 1px;
+    }
+    border-radius: 5px;
+    box-shadow: 0px 8px 50px rgba(210, 232, 254, 0.4);
+    &::-webkit-file-upload-button,&::-webkit-inner-spin-button{
+        display: none;
+    }
+}
+input[type='file']{
+    opacity: 0;
+    cursor: pointer;
+}

@@ -1,0 +1,82 @@
+.adminAddNewUser{
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    h1{
+        display: flex;
+        align-items: center;
+        gap:20px;
+        span:first-child{
+            cursor: pointer;
+            height: 24px;
+            svg{
+                transform: rotate(270deg);
+                path{
+                    stroke: $primary;
+                }
+            }
+        }
+        
+        span:last-child{
+            border-left: 3px solid $primary;
+            padding-left: 10px; 
+        }
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    &__form{
+            max-width: 800px;
+            text-align: center;
+        div{
+            display: flex;
+            align-items: center;
+             justify-content: space-between;
+             margin-bottom: 30px;
+             label{
+                font-weight: 600;
+                p{
+                    text-align: start;
+                }
+             }
+             input{
+                border: 1px solid $primary;
+                border-radius: 5px;
+                outline: none;
+                font-size: 14px;
+                font-weight: 400;
+                padding: 13px 20px;
+                max-width: 400px;
+                box-shadow: none;
+
+            }
+        }
+        select{
+            border: 1px solid $primary;
+            max-width: 400px;
+            border-radius: 5px;
+            outline: none;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 13px 50px 13px 20px;
+            appearance: none;
+            background: url(/assets/images/chevron-down.png) no-repeat center right 20px
+        }
+        
+        & &--password{
+           position: relative;
+           span{
+            position: absolute;
+            right: 20px;
+           }
+        }
+        &--required{
+            color: red;
+        }
+        button{
+            gap:10px;
+ 
+        }
+    }
+}

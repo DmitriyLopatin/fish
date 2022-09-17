@@ -1,0 +1,130 @@
+.header{
+    padding: 10px 20px; 
+    margin-bottom: 35px;
+    .admin__language{
+        margin-bottom: 0;
+    }
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: space-between;
+    &__right{
+        max-width: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+    }
+    &__arrow{
+        transform: rotate(180deg);
+        transition: $transition;
+    }
+    &__arrow--upsideDown{
+        // transform: rotate(-360deg);
+        transition: $transition;
+    }
+    .none{
+        transform: scale(0);
+        transition: $transition;
+        top: 0;
+        left: 100px;
+      }
+    menu{
+        position: absolute;
+        transition: $transition;
+        padding: 20px;
+        left: 0;
+        top: 70px;
+        background-color: white;
+        border-radius: 10px;
+        color: $black;
+        width: 100%;
+        box-shadow: 0px 8px 50px rgba(210,232,254,0.4);
+        p{
+            line-height: 18px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 10px;
+            &:first-child{
+                margin-bottom: 13px;
+            }
+            &:hover{
+                background-color: rgba($color: #52a5fc, $alpha: 0.2);
+            }
+        }
+
+    }
+}
+main{
+    display: flex;
+    gap: 30px;
+}
+aside{
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 250px;
+    ul {
+        li{
+            
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            cursor: pointer;
+            background-color: white;
+            svg{
+                path{
+                    stroke: $black;
+                }
+            }
+            span{
+                max-width: 140px;
+            }
+        }
+        ul{
+            li{
+                padding: 15px 20px 0;
+                &:last-child{
+                    padding-bottom: 14px;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+    }
+    
+    &> ul > li{
+        padding: 14px 20px;
+        margin-bottom: 3px;
+        
+        &:first-child{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-bottom: 0;
+        }
+        &:last-child{
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }        
+    }
+    svg{
+        min-height: 24px;
+        min-width: 24px;
+    }
+    ul li ul li:first-child{
+        padding: 15px 0;
+    }
+}
+.aside__primary{
+        background-color: $primary;
+        color: white;
+    &>ul{
+       background-color: white;
+    }
+    svg{
+        path{
+            stroke:white
+        }
+    }  
+}

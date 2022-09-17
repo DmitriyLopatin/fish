@@ -1,0 +1,52 @@
+.c-btn {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    white-space: nowrap;
+    border: none;
+    padding: 15px 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.c-btn__primary{
+    background-color: $primary;
+    color: white;
+    transition: $transition;
+    
+}
+
+.c-btn__white{
+    background-color: white;
+    color: $black;
+    transition: $transition;
+}
+
+.c-btn__enter{
+    // @media (max-width:1400px){
+    //     margin: 15px 0;
+    // }
+    margin: 30px 0; 
+}
+.c-btn__admin{
+    font-size: 14px;
+    display: flex;
+    gap: 31px;
+    width: fit-content;
+    position: relative;
+    div{
+        p:last-child{
+            color: rgba(161, 202, 243, 1);
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+}
+.c-btn__addUser{
+    background-color: $green;
+    color: white;
+    transition: $transition;
+    
+}
